@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\MAYRA\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add [--dev] set-npm-auth-token-for-ci
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\MAYRA\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\PuTTY;C:\Program Files\dotnet;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\MongoDB\Server\3.6\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\MAYRA\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;C:\Users\MAYRA\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\MAYRA\AppData\Local\GitHubDesktop\bin;C:\Users\MAYRA\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_171\bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.9.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/[--dev]: Not found
+      at Request.params.callback [as _callback] (C:\Users\MAYRA\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:65656:18)
+      at Request.self.callback (C:\Users\MAYRA\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:134675:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (C:\Users\MAYRA\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:135658:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (C:\Users\MAYRA\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:135578:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "mit-scraper",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+      "axios": "^0.18.0",
+      "body-parser": "^1.18.3",
+      "cheerio": "^1.0.0-rc.2",
+      "express": "^4.16.3",
+      "express-handlebars": "^3.0.0",
+      "mongojs": "^2.6.0",
+      "mongoose": "^5.1.8",
+      "morgan": "^1.9.0",
+      "request": "^2.87.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/alctrs/mit-scraper.git"
+    },
+    "author": "Mayra Gamiddo",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/alctrs/mit-scraper/issues"
+    },
+    "homepage": "https://github.com/alctrs/mit-scraper#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
