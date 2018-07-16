@@ -1,0 +1,58 @@
+<div id="wrapper">
+
+  <ul class="nav">
+    <li class="nav-item">
+      <a href="/" class="nav-link navbar-brand">MIT Scraper</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active">Saved Articles</a>
+    </li>
+  </ul>
+
+  <div class="jumbotron">
+    <h1 class="display-4">MIT Scraper</h1>
+    <p class="lead">Technology Review</p>
+    <hr class="my-4">
+    <p class="lead">
+
+    </p>
+  </div>
+
+
+  <div class="articles">
+    {{#if article}} {{#each article}}
+
+    <div class="eacharticle">
+      <div class="text">
+        <a class="titleinsert" href="https://www.technologyreview.com/{{this.link}}" target="_blank">{{this.title}}
+          <h6 class="summaryinsert">{{this.summary}}</h6>
+      </div>
+      <div class="dodoimg">
+        <img src="{{this.image}}">
+      </div>
+      </a>
+
+      <br>
+      <button type="button" class="btn btn-success notesButton" data-id={{this._id}} data-toggle="modal" data-target="#notesModal{{this._id}}">Barkicle Notes</button>
+      <button type="button" class="btn btn-success deleteArticleButton" data-id={{this._id}}>Delete From Saved</button>
+    </div>
+  </div>
+
+  {{/each}} {{else}}
+
+  <div class="noArticles">
+     we don't have any saved Articles
+    <br> Would you like to browse available Articles?
+    <br>
+    <a href="/">
+      <button type="button" class="btn btn-success browseArticles">
+        Browse
+      </button>
+    </a>
+  </div>
+
+  {{/if}}
+
+</div>
+
+{{#each article}} {{> notes }} {{/each}}

@@ -1,0 +1,52 @@
+<div class="modal fade" id="notesModal{{this._id}}" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Notes for article:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <span aria-hidden="true"></span>
+
+            <div class="modal-body">
+
+
+
+                    {{#if this.note}} {{#each this.note}}
+
+                    <div class="eachnote">
+                        <strong>Written on:</strong>
+                        {{this.date}}
+                        <br>
+                        <strong>Note:</strong>
+                        <em>{{this.body}}</em>
+                        <br>
+                        <button type="button" class="deleteNote btn" data-id={{this._id}}>DELETE NOTE</button>
+                    </div>
+
+                    {{/each}}{{else}}
+
+
+
+                <div class="nonotessection">
+                    No notes yet
+                </div>
+
+
+                {{/if}}
+
+                <div class="newnote">
+                    <strong>New Note</strong>
+                    <br>
+                    <textarea rows="4" cols="20" id="note{{this._id}}"></textarea>
+                </div>
+                
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn saveNotesButton" data-id={{this._id}}>Save</button>
+                <button type="button" class="btn cancelButton" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
